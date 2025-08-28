@@ -1,22 +1,8 @@
-import { useState } from "react";
 import "./App.css";
+import GameScene from "./components/GameScene";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <>
-      <div className="container">
-        <canvas></canvas>
-        <button
-          className="count-screen"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          {count}
-        </button>
-      </div>
-    </>
-  );
+  return <GameScene />;
 }
 
 export default App;
